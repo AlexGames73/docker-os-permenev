@@ -7,3 +7,5 @@ res=$(rm example-jpa-jpa.zip)
 cd example-jpa-jpa
 ./gradlew bootJar
 cp build/libs/example-jpa-jpa-0.1.0-SNAPSHOT.jar dockerJar.jar
+cd ..
+docker build -t example-jpa .
